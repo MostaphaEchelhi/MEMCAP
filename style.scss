@@ -17,7 +17,7 @@ h1 {
     font-weight: 700;
     font-size: 40px;
     line-height: 48px;
-    color: black;
+    color: #000000;
 }
 
 
@@ -33,7 +33,7 @@ h1 {
 }
 
 .yellow-background {
-    background-color: yellow;
+    background-color: #FFF500;
 }
 
 p {
@@ -42,7 +42,7 @@ p {
     font-weight: 350;
     font-size: 16px;
     line-height: 19px;
-    color: black;
+    color: #000000;
 }
 
 .rose {
@@ -75,6 +75,13 @@ p {
 .bird {
     display: none;
 }
+
+footer {
+    display: none;
+}
+
+
+
 
 @media screen and (min-width:834px) {
 
@@ -120,17 +127,24 @@ p {
         display: block;
     }
 
-
 }
 
 
 @media screen and (min-width: 1512px) {
 
-    .hero {
-        margin-left: 1rem;
-        margin-right: 1rem;
-        margin-top: 12rem;
+    .memories {
+        justify-content: end;
+    }
 
+    .hero {
+        margin-left: 9rem;
+        margin-right: 30rem;
+        margin-top: 8rem;
+
+    }
+
+    .espresso {
+        text-align: center;
     }
 
     .parrot {
@@ -139,6 +153,36 @@ p {
 
     .bird {
         display: block;
+    }
+
+    .desktopFlex {
+        display: flex;
+    }
+
+    footer {
+        display: block;
+        background-color: #000000;
+        color: #FFF500;
+        
+    }
+
+    .email {
+        border-radius: 1rem;
+        border: none;
+    }
+
+    .signUp {
+        border-radius: 1rem;
+        background-color:  #B30044;
+        color: #FFF500;
+        border: none;
+        cursor: pointer;
+    }
+
+    .signUp:hover {
+        background-color:   #00B308;
+        color: white;
+        cursor: pointer;
     }
 
 }
