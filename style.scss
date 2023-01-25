@@ -1,3 +1,8 @@
+body {
+    margin: 1rem;
+    padding: 0;
+}
+
 .continer1 {
     display: flex;
     flex-direction: row;
@@ -6,6 +11,134 @@
     border-top: solid 3px black;
 }
 
-.memories {
-    align-items: flex-start;
+h1 {
+    font-family: 'KyivType Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: black;
+}
+
+
+.hero {
+    font-family: 'Kyiv*Type Serif';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 33px;
+    line-height: 40px;
+    color: black;
+    outline: solid green;
+    margin-right: 9rem;
+}
+
+.yellow-background {
+    background-color: yellow;
+}
+
+p {
+    font-family: 'KyivType Sans';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 16px;
+    line-height: 19px;
+    color: black;
+}
+
+.rose {
+    display: flex;
+}
+
+.espresso {
+    margin-left: 9rem;
+    outline: solid blue;
+}
+
+.text3 {
+    outline: solid red;
+    margin-right: 6rem;
+}
+
+.rosePic {
+    margin-top: 5rem;
+}
+
+.text4 {
+    outline: solid yellow;
+    margin-left: 6rem;
+}
+
+.parrot {
+    display: none;
+}
+
+.bird {
+    display: none;
+}
+
+@media screen and (min-width:834px) {
+
+    .menu {
+        display: none;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    .memories {
+        display: flex;
+    }
+
+    .hero {
+        font-size: 48px;
+        line-height: 58px;
+        margin-right: 13rem;
+        margin-left: 9rem;
+    }
+
+    .espresso {
+        margin-left: 31rem;
+        margin-right: 7rem;
+    }
+
+    .text3 {
+        margin-right: 29rem;
+        margin-left: 9rem;
+    }
+
+    .text4 {
+        margin-left: 19rem;
+        margin-right: 18rem;
+    }
+
+    .rosePic {
+        display: none;
+    }
+
+    .parrot {
+        display: block;
+    }
+
+
+}
+
+
+@media screen and (min-width: 1512px) {
+
+    .hero {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 12rem;
+
+    }
+
+    .parrot {
+        display: none;
+    }
+
+    .bird {
+        display: block;
+    }
+
 }
