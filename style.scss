@@ -20,6 +20,15 @@ h1 {
     color: #000000;
 }
 
+.menu {
+    width: 70vw;
+    height: 100vh;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    background-color: white;
+}
+
 
 .hero {
     font-family: 'Kyiv*Type Serif';
