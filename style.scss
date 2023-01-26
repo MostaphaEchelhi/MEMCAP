@@ -30,6 +30,8 @@ h1 {
     color: black;
     outline: solid green;
     margin-right: 9rem;
+    max-width: 284px;
+    max-height: 204px;
 }
 
 .yellow-background {
@@ -52,11 +54,15 @@ p {
 .espresso {
     margin-left: 9rem;
     outline: solid blue;
+    max-width: 292px;
+    max-height: 135px;
 }
 
 .text3 {
     outline: solid red;
     margin-right: 6rem;
+    max-width: 292px;
+    max-height: 155px;
 }
 
 .rosePic {
@@ -66,6 +72,8 @@ p {
 .text4 {
     outline: solid yellow;
     margin-left: 6rem;
+    max-width: 292px;
+    max-height: 104px;
 }
 
 .parrot {
@@ -102,21 +110,29 @@ footer {
         line-height: 58px;
         margin-right: 13rem;
         margin-left: 9rem;
+        max-width: 285px;
+        max-height: 430px;
     }
 
     .espresso {
         margin-left: 31rem;
         margin-right: 7rem;
+        max-width: 288px;
+        max-height: 135px;
     }
 
     .text3 {
         margin-right: 29rem;
         margin-left: 9rem;
+        max-width: 288px;
+        max-height: 155px;
     }
 
     .text4 {
         margin-left: 19rem;
         margin-right: 18rem;
+        max-width: 2847px;
+        max-height: 104px;
     }
 
     .rosePic {
@@ -140,15 +156,32 @@ footer {
         margin-left: 9rem;
         margin-right: 30rem;
         margin-top: 8rem;
-
+        max-width: 418px;
+        max-height: 430px;
     }
 
     .espresso {
         text-align: center;
+        max-width: 353px;
+        max-height: 135px;
+        margin: 0;
+    }
+
+    .text3 {
+        max-width: 356px;
+        max-height: 155px;
+        margin: 0;
+    }
+
+    .text4 {
+        max-width: 229px;
+        max-height: 163px;
+        margin: 0;
     }
 
     .parrot {
         display: none;
+        
     }
 
     .bird {
@@ -157,6 +190,25 @@ footer {
 
     .desktopFlex {
         display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: baseline;
+    }
+
+    .desktopPurple {
+        color: #973EFF;
+    }
+
+    .buyBtn {
+        display: flex;
+    }
+
+    .buyitem {
+        font-size: 3rem;
+        width: 183px;
+        height: 54px;
+        background-color: #000000;
+        color: #FFF500;
     }
 
     footer {
