@@ -18,15 +18,44 @@ h1 {
     font-size: 40px;
     line-height: 48px;
     color: #000000;
+    margin: 0;
 }
 
-.menu {
+.btnMenu {
+    z-index: 2;
+    background-color: transparent;
+    border: none;
+}
+
+
+nav {
     width: 70vw;
     height: 100vh;
     z-index: 1;
     position: absolute;
     right: 0;
     background-color: white;
+}
+
+.menu {
+    display: none;
+}
+
+
+
+.menuOrder {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    padding: 1rem;
+    margin-top: 3rem;
 }
 
 
@@ -43,9 +72,10 @@ h1 {
     max-height: 204px;
 }
 
-.yellow-background {
+.yellowTextDark, .yellowTextOnes {
     background-color: #FFF500;
 }
+
 
 p {
     font-family: 'KyivType Sans';
@@ -85,6 +115,9 @@ p {
     max-height: 104px;
 }
 
+.buyBtn{
+    display: none;
+}
 .parrot {
     display: none;
 }
@@ -106,6 +139,10 @@ footer {
         display: none;
     }
 
+    .btnMenu {
+        display: none;
+    }
+
     h1 {
         font-size: 48px;
     }
@@ -121,6 +158,10 @@ footer {
         margin-left: 9rem;
         max-width: 285px;
         max-height: 430px;
+    }
+
+    .yellowTextOnes {
+        background-color: transparent;
     }
 
     .espresso {
@@ -140,7 +181,7 @@ footer {
     .text4 {
         margin-left: 19rem;
         margin-right: 18rem;
-        max-width: 2847px;
+        max-width: 288px;
         max-height: 104px;
     }
 
@@ -167,6 +208,10 @@ footer {
         margin-top: 8rem;
         max-width: 418px;
         max-height: 430px;
+    }
+
+    .yellowTextOnes {
+        background-color: #FFF500;
     }
 
     .espresso {
@@ -209,7 +254,10 @@ footer {
     }
 
     .buyBtn {
-        display: flex;
+        display: block;
+        position: relative;
+        left: 19rem;
+        margin: 5rem.5rem;
     }
 
     .buyitem {
@@ -224,7 +272,15 @@ footer {
         display: block;
         background-color: #000000;
         color: #FFF500;
+        width: 100vw;
+        height: 7rem;
         
+    }
+
+    .footeritem {
+        position: relative;
+        left: 8rem;
+        top: 3rem;
     }
 
     .email {

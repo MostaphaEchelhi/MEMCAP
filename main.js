@@ -5,10 +5,14 @@ menuBtn.addEventListener('click', openMenu);
 navMenu.addEventListener('click', closeMenu);
 
 function openMenu () {
-    navMenu.classList.toggle('.menu');
+    navMenu.classList.toggle('menu');
+    
 }
 
 function closeMenu () {
-    navMenu.classList.toggle('.menu');
+    navMenu.classList.remove('menu');
 }
+
+
+
 
