@@ -2,6 +2,7 @@ Html.CSS (Mobil)
 - En knapp (button) med bokstaven H som roterar när man klickar och då öppnas menyn. []
 - I menyn ska det finnas 4 länkar som navigerar dig (ska vara inaktiva) [X]
 - Text font på rubrik ska vara KyivType Sans med caps. []
+- Text paragraf ska vara kyivType serif. []
 - I Hero texten ska en gul bakgrund täcka orden 'dark ones.' [X] 
 - Bild utan backrund. [X]
 
