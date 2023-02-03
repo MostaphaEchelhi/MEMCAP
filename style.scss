@@ -3,6 +3,38 @@ body {
     padding: 0;
 }
 
+@font-face {
+    font-family: Heading;
+    src: url(./fonts/KyivTypeSans-Bold.otf);
+  }
+
+  @font-face {
+    font-family: heroText;
+    src: url(./fonts/KyivTypeSerif-Regular.otf);
+  }
+
+  @font-face {
+    font-family: firstText;
+    src: url(./fonts/KyivTypeSerif-Regular.otf);
+  }
+
+  @font-face {
+    font-family: pageText;
+    src: url(./fonts/KyivTypeSerif-Regular.otf);
+  }
+
+  @font-face {
+    font-family: BoldFont;
+    src: url(./fonts/KyivTypeSerif-Regular.otf);
+  }
+
+  @font-face {
+    font-family: cookiesFont;
+    src: url(./fonts/KyivTypeSerif-Regular.otf);
+  }
+
+
+
 .continer1 {
     display: flex;
     flex-direction: row;
@@ -12,7 +44,8 @@ body {
 }
 
 h1 {
-    font-family: 'KyivType Sans';
+
+    font-family: Heading;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -25,6 +58,12 @@ h1 {
     z-index: 2;
     background-color: transparent;
     border: none;
+    transition: 0.2s ease-in-out;
+}
+
+.btnMenu.rotate{
+    transform: rotate(-90deg);
+    transition: 0.2s ease-in-out;
 }
 
 
@@ -40,8 +79,6 @@ nav {
 .menu {
     display: none;
 }
-
-
 
 .menuOrder {
     display: flex;
@@ -64,7 +101,7 @@ a {
 
 
 .hero {
-    font-family: 'Kyiv*Type Serif';
+    font-family: heroText;
     font-style: normal;
     font-weight: 350;
     font-size: 33px;

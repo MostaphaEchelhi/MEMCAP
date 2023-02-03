@@ -6,11 +6,13 @@ navMenu.addEventListener('click', closeMenu);
 
 function openMenu () {
     navMenu.classList.toggle('menu');
+    menuBtn.classList.toggle('rotate');
     
 }
 
 function closeMenu () {
     navMenu.classList.remove('menu');
+    menuBtn.classList.toggle('rotate');
 }
 
 
