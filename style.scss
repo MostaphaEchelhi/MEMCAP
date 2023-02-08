@@ -1,60 +1,41 @@
 body {
-    margin: 1rem;
+    margin: 0;
     padding: 0;
 }
 
 @font-face {
-    font-family: Heading;
+    font-family: kyivBoldSans;
     src: url(./fonts/KyivTypeSans-Bold.otf);
   }
 
-  @font-face {
-    font-family: heroText;
+@font-face {
+    font-family: kyivRegularSerif;
     src: url(./fonts/KyivTypeSerif-Regular.otf);
   }
 
-  @font-face {
-    font-family: firstText;
-    src: url(./fonts/KyivTypeSerif-Regular.otf);
-  }
-
-  @font-face {
-    font-family: pageText;
-    src: url(./fonts/KyivTypeSerif-Regular.otf);
-  }
-
-  @font-face {
-    font-family: BoldFont;
-    src: url(./fonts/KyivTypeSerif-Regular.otf);
-  }
-
-  @font-face {
-    font-family: cookiesFont;
-    src: url(./fonts/KyivTypeSerif-Regular.otf);
-  }
-
-
-
-.continer1 {
+.head {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     border-bottom: solid 3px black;
     border-top: solid 3px black;
+    height: 64px;
 }
 
 h1 {
-
-    font-family: Heading;
+    font-family: kyivBoldSans;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
     line-height: 48px;
     color: #000000;
-    margin: 0;
 }
 
 .btnMenu {
+    font-family: kyivBoldSans;
+    font-size: 64px;
+    line-height: 77px;
     z-index: 2;
     background-color: transparent;
     border: none;
@@ -62,23 +43,26 @@ h1 {
 }
 
 .btnMenu.rotate{
-    transform: rotate(-90deg);
+    transform: rotate( -90deg);
     transition: 0.2s ease-in-out;
-}
-
-
-nav {
-    width: 70vw;
-    height: 100vh;
-    z-index: 1;
-    position: absolute;
-    right: 0;
-    background-color: white;
 }
 
 .menu {
     display: none;
 }
+
+nav {
+    position: absolute;
+    width: 70vw;
+    height: 99vh;
+    z-index: 1;
+    right: 0;
+    background-color: white;
+    margin-top: 48.5rem;
+    border: 3px solid black;
+}
+
+
 
 .menuOrder {
     display: flex;
@@ -99,16 +83,18 @@ a {
     text-decoration: none;
 }
 
+/*.menuBackground {
+    background: rgba(18, 18, 18, 0.6);
+}*/
 
-.hero {
-    font-family: heroText;
-    font-style: normal;
-    font-weight: 350;
+
+.heroText {
+    position: relative;
+    left: 19px;
+    top: 18px;
+    font-family: kyivRegularSerif;
     font-size: 33px;
-    line-height: 40px;
-    color: black;
     outline: solid green;
-    margin-right: 9rem;
     max-width: 284px;
     max-height: 204px;
 }
@@ -117,31 +103,31 @@ a {
     background-color: #FFF500;
 }
 
-
-p {
-    font-family: 'KyivType Sans';
-    font-style: normal;
-    font-weight: 350;
-    font-size: 16px;
-    line-height: 19px;
-    color: #000000;
-}
-
-.rose {
-    display: flex;
-}
-
-.espresso {
-    margin-left: 9rem;
+.secondContainer {
+    position: relative;
+    left: 120px;
+    top: 39px;
     outline: solid blue;
-    max-width: 292px;
+    max-width: 257px;
     max-height: 135px;
 }
 
+
+.thirdContainer {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: 16px;
+    top: 80px;
+    max-width: 360px;
+    max-height: 215px;
+}
+
+
+
 .text3 {
     outline: solid red;
-    margin-right: 6rem;
-    max-width: 292px;
+    max-width: 215px;
     max-height: 155px;
 }
 
@@ -149,11 +135,13 @@ p {
     margin-top: 5rem;
 }
 
-.text4 {
-    outline: solid yellow;
-    margin-left: 6rem;
-    max-width: 292px;
-    max-height: 104px;
+.fourContainer {
+    position: relative;
+    left: 148px;
+    top: 90px;
+    outline: solid #ff0;
+    max-width: 226px;
+    max-height: 104px;;
 }
 
 .buyBtn{
@@ -188,15 +176,15 @@ footer {
         font-size: 48px;
     }
 
-    .memories {
+    .firstContainer {
         display: flex;
+        justify-content: space-evenly;
+        max-width: 860px;
     }
 
-    .hero {
+    .heroText {
         font-size: 48px;
         line-height: 58px;
-        margin-right: 13rem;
-        margin-left: 9rem;
         max-width: 285px;
         max-height: 430px;
     }
@@ -205,23 +193,23 @@ footer {
         background-color: transparent;
     }
 
-    .espresso {
-        margin-left: 31rem;
-        margin-right: 7rem;
+    .secondContainer {
+        position: relative;
+        left: 427px;
         max-width: 288px;
         max-height: 135px;
     }
 
     .text3 {
-        margin-right: 29rem;
-        margin-left: 9rem;
+        position: relative;
+        left: 119px;
         max-width: 288px;
         max-height: 155px;
     }
 
-    .text4 {
-        margin-left: 19rem;
-        margin-right: 18rem;
+    .fourContainer {
+        position: relative;
+        left: 324px;
         max-width: 288px;
         max-height: 104px;
     }
@@ -239,14 +227,22 @@ footer {
 
 @media screen and (min-width: 1512px) {
 
-    .memories {
-        justify-content: end;
+    .desktopholder {
+        max-width: 100rem;
+        max-height: 100rem;
     }
 
-    .hero {
-        margin-left: 9rem;
-        margin-right: 30rem;
-        margin-top: 8rem;
+    .firstContainer {
+        justify-content:space-between;
+        max-width: none;
+
+    }
+
+    .heroText {
+        position: relative;
+        width: 418px;
+        left: 145px;
+        top: 128px;
         max-width: 418px;
         max-height: 430px;
     }
@@ -255,23 +251,26 @@ footer {
         background-color: #FFF500;
     }
 
-    .espresso {
-        text-align: center;
+    .secondContainer {
+        position: static;
         max-width: 353px;
         max-height: 135px;
-        margin: 0;
+    }
+
+    .thirdContainer {
+        position: static;
     }
 
     .text3 {
+        position: static;
         max-width: 356px;
         max-height: 155px;
-        margin: 0;
     }
 
-    .text4 {
+    .fourContainer {
+        position: static;
         max-width: 229px;
         max-height: 163px;
-        margin: 0;
     }
 
     .parrot {
@@ -288,6 +287,7 @@ footer {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: baseline;
+        height: 250px;
     }
 
     .desktopPurple {
@@ -295,10 +295,12 @@ footer {
     }
 
     .buyBtn {
+        font-family: kyivRegularSerif;
         display: block;
         position: relative;
-        left: 19rem;
-        margin: 5rem.5rem;
+        height: 142px;
+        left: 260px;
+
     }
 
     .buyitem:hover {
@@ -315,11 +317,11 @@ footer {
     }
 
     footer {
+        font-family: kyivRegularSerif; 
         display: block;
         background-color: #000000;
         color: #FFF500;
-        width: 100vw;
-        height: 7rem;
+        height: 144px;
         
     }
 
@@ -335,6 +337,7 @@ footer {
     }
 
     .signUp {
+        font-family: button;
         border-radius: 1rem;
         background-color:  #B30044;
         color: #FFF500;
