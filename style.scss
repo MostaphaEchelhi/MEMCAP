@@ -6,12 +6,18 @@ body {
 @font-face {
     font-family: kyivBoldSans;
     src: url(./fonts/KyivTypeSans-Bold.otf);
-  }
+}
 
 @font-face {
     font-family: kyivRegularSerif;
     src: url(./fonts/KyivTypeSerif-Regular.otf);
-  }
+}
+
+@font-face {
+    font-family: kyivRegularSans;
+    src: url(./fonts/KyivTypeSans-Regular.otf);
+}
+
 
 .head {
     display: flex;
@@ -33,6 +39,7 @@ h1 {
 }
 
 .btnMenu {
+    cursor: pointer;
     font-family: kyivBoldSans;
     font-size: 64px;
     line-height: 77px;
@@ -47,14 +54,14 @@ h1 {
     transition: 0.2s ease-in-out;
 }
 
-.menu {
+.hidden {
     display: none;
 }
 
 nav {
     position: absolute;
     width: 70vw;
-    height: 99vh;
+    height: 100vh;
     z-index: 1;
     right: 0;
     background-color: white;
@@ -83,10 +90,6 @@ a {
     text-decoration: none;
 }
 
-/*.menuBackground {
-    background: rgba(18, 18, 18, 0.6);
-}*/
-
 
 .heroText {
     position: relative;
@@ -104,11 +107,16 @@ a {
 }
 
 .secondContainer {
+    font-family: kyivRegularSans;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 16px;
+    line-height: 19px;
     position: relative;
     left: 120px;
     top: 39px;
     outline: solid blue;
-    max-width: 257px;
+    max-width: 265px;
     max-height: 135px;
 }
 
@@ -129,6 +137,11 @@ a {
     outline: solid red;
     max-width: 215px;
     max-height: 155px;
+    font-family: kyivRegularSans;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 16px;
+    line-height: 19px;
 }
 
 .rosePic {
@@ -141,7 +154,12 @@ a {
     top: 90px;
     outline: solid #ff0;
     max-width: 226px;
-    max-height: 104px;;
+    max-height: 104px;
+    font-family: kyivRegularSans;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 16px;
+    line-height: 19px;
 }
 
 .buyBtn{
@@ -156,6 +174,10 @@ a {
 }
 
 footer {
+    display: none;
+}
+
+.cookies {
     display: none;
 }
 
@@ -228,8 +250,8 @@ footer {
 @media screen and (min-width: 1512px) {
 
     .desktopholder {
-        max-width: 100rem;
-        max-height: 100rem;
+        max-width: 120rem;
+        max-height: 120rem;
     }
 
     .firstContainer {
@@ -317,7 +339,7 @@ footer {
     }
 
     footer {
-        font-family: kyivRegularSerif; 
+        font-family: kyivBoldSans; 
         display: block;
         background-color: #000000;
         color: #FFF500;
@@ -337,7 +359,7 @@ footer {
     }
 
     .signUp {
-        font-family: button;
+        font-family: kyivRegularSans;
         border-radius: 1rem;
         background-color:  #B30044;
         color: #FFF500;
@@ -350,6 +372,71 @@ footer {
         background-color:   #00B308;
         color: white;
         cursor: pointer;
+    }
+
+
+    .fifthContainer {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: black;
+        opacity: 0.8;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .cookies  {
+        display: block;
+        position: absolute;
+        width: 480px;
+        height: 347px;
+        left: 516px;
+        top: 274px;
+        background-color: white;
+        border: solid 3px black;
+        border-radius: 20px;
+    }
+
+   
+
+    .cookies p {
+        font-family: kyivRegularSans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        position: relative;
+        width: 361px;
+        height: 138px;
+        left: 80px;
+        top: 55px;
+    }
+    .rejectBtn {
+        font-family: kyivRegularSans;
+        cursor: pointer;
+        position: relative;
+        left: 10px;
+        top: 20px;
+        font-size: 16px;
+        background-color: #FF4B93;
+        color: white;
+        border: solid 3px black;
+        border-radius: 10px;
+        text-transform: uppercase;
+    }
+
+    .acceptBtn {
+        font-family: kyivRegularSans;
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        bottom: 20px;
+        background-color: #B30044;
+        color: yellow;
+        border: solid 3px black;
+        border-radius: 10px;
+        font-size: 16px;
+        text-transform: uppercase;
     }
 
 }
