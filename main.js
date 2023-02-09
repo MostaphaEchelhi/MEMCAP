@@ -6,6 +6,8 @@ const darkBackground = document.querySelector(".menuBackground");
 const rejectBtn = document.querySelector(".rejectBtn");
 const acceptBtn = document.querySelector(".acceptBtn");
 const continerFive = document.querySelector(".fifthContainer");
+const menuBlack = document.querySelector(".lightBlack");
+
 
 
 /*****************addEventListener***********************/
@@ -20,6 +22,7 @@ acceptBtn.addEventListener("click", closeCookie);
 function openMenuAndClose () {
    navMenu.classList.toggle("hidden");
    menuBtn.classList.toggle("rotate");
+   menuBlack.classList.toggle("active");
 }
 
 

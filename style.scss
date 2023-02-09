@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    height: 100vh;
 }
 
 @font-face {
@@ -39,11 +40,13 @@ h1 {
 }
 
 .btnMenu {
+    position: absolute;
+    right: 0;
     cursor: pointer;
     font-family: kyivBoldSans;
     font-size: 64px;
     line-height: 77px;
-    z-index: 2;
+    z-index: 5;
     background-color: transparent;
     border: none;
     transition: 0.2s ease-in-out;
@@ -62,10 +65,10 @@ nav {
     position: absolute;
     width: 70vw;
     height: 100vh;
-    z-index: 1;
+    z-index: 4;
     right: 0;
     background-color: white;
-    margin-top: 48.5rem;
+    margin-top: 55rem;
     border: 3px solid black;
 }
 
@@ -91,13 +94,22 @@ a {
 }
 
 
+.lightBlack.active {
+    display: block;
+    background-color: rgba(0,0,0,.6588235294);
+    position: absolute;
+    height: 210vh;
+    width: 100vw;
+    z-index: 3;
+}
+
+
 .heroText {
     position: relative;
     left: 19px;
     top: 18px;
     font-family: kyivRegularSerif;
     font-size: 33px;
-    outline: solid green;
     max-width: 284px;
     max-height: 204px;
 }
@@ -115,7 +127,6 @@ a {
     position: relative;
     left: 120px;
     top: 39px;
-    outline: solid blue;
     max-width: 265px;
     max-height: 135px;
 }
@@ -134,7 +145,6 @@ a {
 
 
 .text3 {
-    outline: solid red;
     max-width: 215px;
     max-height: 155px;
     font-family: kyivRegularSans;
@@ -152,7 +162,6 @@ a {
     position: relative;
     left: 148px;
     top: 90px;
-    outline: solid #ff0;
     max-width: 226px;
     max-height: 104px;
     font-family: kyivRegularSans;
